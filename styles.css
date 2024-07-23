@@ -24,11 +24,12 @@ img{
 
 .product{
     border: #000000;
-    background-color: red;
     border-radius: 25px;
     border-style: solid;
     box-sizing: border-box;
-    min-width: 300px;
+    max-width: 250px;
+    max-height: 250px;
+    text-wrap: auto;
 }
 
 nav ul {
