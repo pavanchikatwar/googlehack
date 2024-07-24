@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 2, name: 'Product 2', price: 20.0 },
         { id: 3, name: 'Product 3', price: 30.0 },
     ];
-
+// shkj
     const productsSection = document.getElementById('products');
     products.forEach(product => {
         const productCard = document.createElement('div');
