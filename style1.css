@@ -22,10 +22,10 @@ img{
     height: 50px;
 }
 
-/* #product{
+#product{
     display:flex ;
     flex-direction: row;
-} */
+} 
 
 .product{
     border: #000000;
