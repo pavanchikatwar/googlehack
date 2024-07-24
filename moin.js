@@ -5,11 +5,11 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 // Sample product data
-const products = [
-    { name: 'Product 1', price: '$10' },
-    { name: 'Product 2', price: '$20' },
-    { name: 'Product 3', price: '$30' },
-];
+// const products = [
+//     { name: 'Product 1', price: '$10' },
+//     { name: 'Product 2', price: '$20' },
+//     { name: 'Product 3', price: '$30' },
+// ];
 
 // Display products
 const productList = document.getElementById('product-list');
