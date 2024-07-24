@@ -22,11 +22,6 @@ img{
     height: 50px;
 }
 
-/* #product{
-    display:flex ;
-    flex-direction: row;
-} */
-
 .product{
     border: #000000;
     border-radius: 25px;
