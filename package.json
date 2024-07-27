@@ -1,16 +1,21 @@
 {
-    "name": "googlehack",
-    "version": "1.0.0",
-    "main": "server.js",
-    "scripts": {
-        "start": "node server.js"
-    },
-    "dependencies": {
-        "bcryptjs": "^2.4.3",
-        "express": "^4.19.2",
-        "express-session": "^1.18.0",
-        "mongoose": "^8.5.1",
-        "passport": "^0.7.0",
-        "passport-local": "^1.0.0"
-    }
+  "name": "my-app",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^13.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "axios": "^1.7.2",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^13.0.0"
+  }
 }
