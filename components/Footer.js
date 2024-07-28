@@ -8,29 +8,29 @@ const Footer = () => {
         <div className={styles.links}>
           <ul>
             <li>
-              <Link href="/about">
-                <a>About Us</a>
+              <Link href="/about" passHref>
+                About Us
               </Link>
             </li>
             <li>
-              <Link href="/contact">
-                <a>Contact</a>
+              <Link href="/contact" passHref>
+                Contact
               </Link>
             </li>
             <li>
-              <Link href="/privacy-policy">
-                <a>Privacy Policy</a>
+              <Link href="/privacy-policy" passHref>
+                Privacy Policy
               </Link>
             </li>
             <li>
-              <Link href="/terms">
-                <a>Terms of Service</a>
+              <Link href="/terms" passHref>
+                Terms of Service
               </Link>
             </li>
           </ul>
         </div>
         <div className={styles.socialMedia}>
-          {/* Replace with actual links to your social media profiles */}
+          {/* External links should use standard <a> tags */}
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             Twitter
           </a>

@@ -1,0 +1,32 @@
+.profileForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .profileForm label {
+    margin-bottom: 1rem;
+  }
+  
+  .profileForm input,
+  .profileForm textarea,
+  .profileForm select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .profileForm button {
+    padding: 0.75rem 1.5rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .profileForm button:hover {
+    background-color: #005bb5;
+  }
+  

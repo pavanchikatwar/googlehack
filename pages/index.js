@@ -29,28 +29,28 @@ export default function Home() {
             <a className={styles.card}>
               <h2>Register &rarr;</h2>
               <p>Create an account to get started.</p>
-            </a>
+
           </Link>
 
           <Link href="/login">
             <a className={styles.card}>
               <h2>Login &rarr;</h2>
               <p>Access your account.</p>
-            </a>
+
           </Link>
 
           <Link href="/dashboard">
             <a className={styles.card}>
               <h2>Dashboard &rarr;</h2>
               <p>View your dashboard and manage your activities.</p>
-            </a>
+
           </Link>
 
           <Link href="/profile">
             <a className={styles.card}>
               <h2>Profile &rarr;</h2>
               <p>Manage your profile information.</p>
-            </a>
+
           </Link>
         </div>
       </main>

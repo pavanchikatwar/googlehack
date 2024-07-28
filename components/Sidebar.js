@@ -16,43 +16,43 @@ const Sidebar = () => {
         <ul>
           <li>
             <Link href="/dashboard">
-              <a>Dashboard</a>
+              Dashboard
             </Link>
           </li>
           <li>
             <Link href="/store">
-              <a>Store</a>
+              Store
             </Link>
           </li>
           <li>
             <Link href="/products">
-              <a>Products</a>
+              Products
             </Link>
           </li>
           <li>
             <Link href="/investors">
-              <a>Investors</a>
+              Investors
             </Link>
-          </li>
+          </li >
           <li>
             <Link href="/bulk-orders">
-              <a>Bulk Orders</a>
+              Bulk Orders
             </Link>
-          </li>
+          </li >
           <li>
             <Link href="/loans">
-              <a>Loans</a>
+              Loans
             </Link>
           </li>
           <li>
             <Link href="/schemes">
-              <a>Schemes</a>
+              Schemes
             </Link>
           </li>
           {/* Add more navigation links as needed */}
-        </ul>
-      </nav>
-    </aside>
+        </ul >
+      </nav >
+    </aside >
   );
 };
 
