@@ -30,16 +30,16 @@ const Footer = () => {
           </ul>
         </div>
         <div className={styles.socialMedia}>
-          {/* External links should use standard <a> tags */}
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          {/* External links should use standard <link> tags */}
+          <link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             Twitter
-          </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          </link>
+          <link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             Facebook
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          </link>
+          <link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             LinkedIn
-          </a>
+          </link>
         </div>
         <div className={styles.copyright}>
           <p>&copy; {new Date().getFullYear()} MyApp. All rights reserved.</p>

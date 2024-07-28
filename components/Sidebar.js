@@ -4,19 +4,16 @@ import styles from './Sidebar.module.css'; // Assuming you have a CSS module for
 const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
-      <div className={styles.userInfo}>
-        <img
-          src="/path/to/profile-pic.jpg" // Replace with actual profile picture path
-          alt="Profile Picture"
-          className={styles.profilePic}
-        />
-        <h2 className={styles.userName}>Username</h2> {/* Replace with dynamic user name */}
-      </div>
-      <nav className={styles.nav}>
+      <nav>
         <ul>
           <li>
             <Link href="/dashboard">
               Dashboard
+            </Link>
+          </li>
+          <li>
+            <Link href="/profile">
+              Profile
             </Link>
           </li>
           <li>
@@ -33,12 +30,12 @@ const Sidebar = () => {
             <Link href="/investors">
               Investors
             </Link>
-          </li >
+          </li>
           <li>
             <Link href="/bulk-orders">
               Bulk Orders
             </Link>
-          </li >
+          </li>
           <li>
             <Link href="/loans">
               Loans
@@ -49,10 +46,35 @@ const Sidebar = () => {
               Schemes
             </Link>
           </li>
+          <li>
+            <Link href="/cart">
+              Cart
+            </Link>
+          </li>
+          <li>
+            <Link href="/checkout">
+              Checkout
+            </Link>
+          </li>
+          <li>
+            <Link href="/gigs">
+              Gigs
+            </Link>
+          </li>
+          <li>
+            <Link href="/quotations">
+              Quotations
+            </Link>
+          </li>
+          <li>
+            <Link href="/orders">
+              Orders
+            </Link>
+          </li>
           {/* Add more navigation links as needed */}
-        </ul >
-      </nav >
-    </aside >
+        </ul>
+      </nav>
+    </aside>
   );
 };
 
