@@ -31,15 +31,15 @@ const Footer = () => {
         </div>
         <div className={styles.socialMedia}>
           {/* External links should use standard <link> tags */}
-          <link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             Twitter
-          </link>
-          <link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             Facebook
-          </link>
-          <link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             LinkedIn
-          </link>
+          </Link>
         </div>
         <div className={styles.copyright}>
           <p>&copy; {new Date().getFullYear()} MyApp. All rights reserved.</p>

@@ -10,11 +10,8 @@ export default function Home() {
       <Head>
         <title>Business Platform</title>
         <meta name="description" content="Platform connecting small businesses with investors and large businesses" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <Header />
-
+        {/* <Link rel="icon" href="/favicon.ico" /> */}
+      </Head> 
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to the Business Platform
@@ -24,38 +21,30 @@ export default function Home() {
           Connect, Invest, and Grow
         </p>
 
-        <div className={styles.grid}>
-          <Link href="/register">
-            <link className={styles.card}>
+        <div className={styles.grid}> 
+            <Link  href="/register" className={styles.card}>
               <h2>Register →</h2>
               <p>Create an account to get started.</p>
-            </link>
-          </Link>
-
-          <Link href="/login">
-            <link className={styles.card}>
+            </Link> 
+ 
+            <Link href="/login" className={styles.card}>
               <h2>Login →</h2>
               <p>Access your account.</p>
-            </link>
-          </Link>
+            </Link> 
 
-          <Link href="/dashboard">
-            <link className={styles.card}>
+       
+            <Link  href="/dashboard" className={styles.card}>
               <h2>Dashboard →</h2>
               <p>View your dashboard and manage your activities.</p>
-            </link>
-          </Link>
-
-          <Link href="/profile">
-            <link className={styles.card}>
+            </Link> 
+ 
+            <Link href="/profile" className={styles.card}>
               <h2>Profile →</h2>
               <p>Manage your profile information.</p>
-            </link>
-          </Link>
+            </Link>  
         </div>
       </main>
-
-      <Footer />
+ 
     </div>
   );
 }

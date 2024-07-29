@@ -57,7 +57,7 @@ const LoginPage = () => {
         <button type="submit">Login</button>
       </form>
       <p>
-        <link href="/register">Create an account</link>
+        <Link href="/register">Create an account</Link>
       </p>
     </div>
   );
