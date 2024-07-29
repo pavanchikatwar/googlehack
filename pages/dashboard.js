@@ -6,7 +6,7 @@ import styles from '../styles/Dashboard.module.css';
 const Dashboard = ({ userType }) => {
   return (
     <div className={styles.dashboard}>
-      <Header />
+    
       <Sidebar />
       <main className={styles.mainContent}>
         <h1>Dashboard</h1>
@@ -125,8 +125,7 @@ const Dashboard = ({ userType }) => {
           <input type="text" placeholder="Search..." className={styles.searchInput} />
           <button className={styles.button}>Apply Filters</button>
         </section>
-      </main>
-      <Footer />
+      </main> 
     </div>
   );
 };

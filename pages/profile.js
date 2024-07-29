@@ -6,7 +6,7 @@ import styles from '../styles/Profile.module.css';
 const Profile = ({ userType }) => {
   return (
     <div className={styles.profile}>
-      <Header />
+
       <Sidebar />
       <main className={styles.mainContent}>
         <h1>Profile</h1>
@@ -66,7 +66,7 @@ const Profile = ({ userType }) => {
         )}
 
       </main>
-      <Footer />
+
     </div>
   );
 };

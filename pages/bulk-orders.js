@@ -6,7 +6,7 @@ import Link from 'next/link';
 const BulkOrders = () => {
   return (
     <div className={styles.bulkOrdersPage}>
-      <Header />
+
       <main className={styles.mainContent}>
         <section className={styles.introduction}>
           <h1>Bulk Orders</h1>
@@ -116,7 +116,7 @@ const BulkOrders = () => {
           {/* Promotion details would go here */}
         </section>
       </main>
-      <Footer />
+
     </div>
   );
 };

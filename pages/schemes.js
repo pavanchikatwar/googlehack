@@ -11,8 +11,8 @@ const Scheme = ({ scheme }) => (
     <p><strong>Eligibility:</strong> {scheme.eligibility}</p>
     <p><strong>Application Process:</strong> {scheme.applicationProcess}</p>
     <p><strong>Deadline:</strong> {scheme.deadline}</p>
-    <Link href={`/scheme-details/${scheme.id}`}>
-      <a className={styles.viewDetails}>View Details</a>
+    <Link href={`/scheme-details/${scheme.id}`} >
+      View Details
     </Link>
   </div>
 );
@@ -20,7 +20,7 @@ const Scheme = ({ scheme }) => (
 const SchemesPage = () => {
   return (
     <div className={styles.schemesPage}>
-      <Header />
+
       <main className={styles.mainContent}>
         <section className={styles.introduction}>
           <h1>Government Schemes and Subsidies</h1>
@@ -69,16 +69,16 @@ const SchemesPage = () => {
         <section className={styles.resources}>
           <h2>Resources and Support</h2>
           <Link href="/guides">
-            <a className={styles.link}>Scheme Application Guides</a>
+            Scheme Application Guides
           </Link>
-          <Link href="/faqs">
-            <a className={styles.link}>FAQs</a>
+          <Link href="/faqs" className={styles.link}>
+            FAQs
           </Link>
           <p>For further assistance, please contact our support team.</p>
-          <a href="mailto:support@yourplatform.com" className={styles.contactLink}>Contact Support</a>
+          <Link href="mailto:support@yourplatform.com" className={styles.contactLink}>Contact Support</Link>
         </section>
       </main>
-      <Footer />
+
     </div>
   );
 };

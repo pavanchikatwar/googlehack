@@ -40,7 +40,7 @@ export default function Register() {
         <title>Register - Business Platform</title>
         <meta name="description" content="Register on the business platform" />
       </Head>
-      <Header />
+
       <main>
         <h1>Register</h1>
         {error && <p style={{ color: 'red' }}>{error}</p>}
@@ -84,7 +84,7 @@ export default function Register() {
           <button type="submit">Register</button>
         </form>
       </main>
-      <Footer />
+
     </div>
   );
 }

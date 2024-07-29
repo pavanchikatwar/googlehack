@@ -24,8 +24,9 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
-        <Link href="/">MyApp</Link> {/* No  tag needed here */}
+      <div >
+        <Link href="/">MyApp</Link> 
+       
       </div>
       <nav className={styles.nav}>
         <ul>

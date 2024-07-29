@@ -7,7 +7,7 @@ import ProductCard from '../components/ProductCard'; // A component for displayi
 const Store = () => {
   return (
     <div className={styles.store}>
-      <Header />
+
       <Sidebar />
       <main className={styles.mainContent}>
         <section className={styles.storeOverview}>
@@ -55,7 +55,7 @@ const Store = () => {
           </form>
         </section>
       </main>
-      <Footer />
+
     </div>
   );
 };

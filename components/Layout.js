@@ -1,19 +1,28 @@
-import Header from './Header';
+import React from 'react';
+import { Layout } from 'antd';
 import Sidebar from './Sidebar';
+import Header from './Header';
 import Footer from './Footer';
-import styles from './Layout.module.css'; // Optional, for layout styling
 
-const Layout = ({ children }) => {
+const { Content, Sider } = Layout;
+
+const MyLayout = ({ children }) => {
   return (
-    <div className={styles.container}>
+    <Layout className="min-h-screen">
       <Header />
-      <div className={styles.mainContent}>
-        <Sidebar />
-        <main className={styles.pageContent}>{children}</main>
-      </div>
+      <Layout className="flex">
+        <Sider width={200} className="bg-white border-r border-gray-200">
+          <Sidebar />
+        </Sider>
+        <Layout className="flex-1 p-6">
+          <Content className="bg-white rounded-lg shadow-md p-4">
+            {children}
+          </Content>
+        </Layout>
+      </Layout>
       <Footer />
-    </div>
+    </Layout>
   );
 };
 
-export default Layout;
+export default MyLayout;

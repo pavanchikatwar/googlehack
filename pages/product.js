@@ -13,7 +13,7 @@ const Product = () => {
 
   return (
     <div className={styles.productPage}>
-      <Header />
+
       <main className={styles.mainContent}>
         <div className={styles.productDetails}>
           <div className={styles.imageGallery}>
@@ -99,7 +99,7 @@ const Product = () => {
           {/* Add product comparison feature here */}
         </section>
       </main>
-      <Footer />
+
     </div>
   );
 };

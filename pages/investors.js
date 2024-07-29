@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Investors = () => {
   return (
     <div className={styles.investorsPage}>
-      <Header />
+
       <main className={styles.mainContent}>
         <section className={styles.introduction}>
           <h1>Welcome Investors</h1>
@@ -147,7 +147,7 @@ const Investors = () => {
           </div>
         </section>
       </main>
-      <Footer />
+
     </div>
   );
 };
