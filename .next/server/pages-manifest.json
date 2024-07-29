@@ -2,8 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/investors": "pages/investors.js",
-  "/": "pages/index.js",
-  "/store": "pages/store.js",
-  "/profile": "pages/profile.js"
+  "/profile": "pages/profile.js",
+  "/schemes": "pages/schemes.js"
 }

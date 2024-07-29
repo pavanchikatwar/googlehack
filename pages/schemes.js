@@ -3,19 +3,27 @@ import Footer from '../components/Footer';
 import { schemes } from '../data/schemes';
 import styles from '../styles/Schemes.module.css';
 import Link from 'next/link';
+import { Card, Button } from 'antd';
 
-const Scheme = ({ scheme }) => (
-  <div className={styles.schemeCard}>
-    <h3>{scheme.name}</h3>
-    <p>{scheme.description}</p>
-    <p><strong>Eligibility:</strong> {scheme.eligibility}</p>
-    <p><strong>Application Process:</strong> {scheme.applicationProcess}</p>
-    <p><strong>Deadline:</strong> {scheme.deadline}</p>
-    <Link href={`/scheme-details/${scheme.id}`} >
-      View Details
-    </Link>
-  </div>
-);
+const Scheme = ({ scheme }) => {
+  return (
+    <Card
+      className="bg-white shadow-lg rounded-lg border  "
+      title={<h3 className="text-xl font-semibold" >{scheme.name}</h3>}
+      bordered={false}
+      extra={
+        <Link href={`/scheme-details/${scheme.id}`}>
+          <Button type="primary">View Details</Button>
+        </Link>
+      }
+    >
+      <p className="text-gray-700 mb-2">{scheme.description}</p>
+      <p className="text-gray-800"><strong>Eligibility:</strong> {scheme.eligibility}</p>
+      <p className="text-gray-800"><strong>Application Process:</strong> {scheme.applicationProcess}</p>
+      <p className="text-gray-800"><strong>Deadline:</strong> {scheme.deadline}</p>
+    </Card>
+  );
+};
 
 const SchemesPage = () => {
   return (
@@ -60,7 +68,7 @@ const SchemesPage = () => {
           </div>
         </section>
 
-        <section className={styles.schemeListings}>
+        <section className={`gap-4 flex flex-col my-4`}>
           {schemes.map(scheme => (
             <Scheme key={scheme.id} scheme={scheme} />
           ))}
