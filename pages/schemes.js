@@ -1,5 +1,3 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { schemes } from '../data/schemes';
 import styles from '../styles/Schemes.module.css';
 import Link from 'next/link';

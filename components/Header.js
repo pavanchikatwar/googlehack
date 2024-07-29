@@ -1,6 +1,7 @@
 import { Layout, Menu, Button } from 'antd';
 import Link from 'next/link';
 import { useState } from 'react';
+import { SignIn } from './SignIn';
 
 const { Header: AntHeader } = Layout;
 
@@ -37,6 +38,7 @@ const Header = () => {
             },
           ].filter(Boolean)}
         />
+        <SignIn/>
       </div>
     </AntHeader>
   );
