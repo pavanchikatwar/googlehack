@@ -1,57 +1,44 @@
-import { useState, useEffect } from 'react';
+import { Layout, Menu, Button } from 'antd';
 import Link from 'next/link';
-import styles from './Header.module.css'; // Ensure the CSS module exists and is correctly named
+import { useState } from 'react';
+
+const { Header: AntHeader } = Layout;
 
 const Header = () => {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    // Fetch user data or check authentication status
-    // This is just a placeholder; replace with actual authentication logic
-    const fetchUser = async () => {
-      // Example: const response = await fetch('/api/auth/user');
-      // const data = await response.json();
-      // setUser(data.user);
-    };
-    fetchUser();
-  }, []);
+  const [user, setUser] = useState(true); // Replace with your actual user authentication logic
 
   const handleLogout = () => {
-    // Handle logout logic here
-    console.log('Logout button clicked');
-    // Example: Clear user session, redirect to login, etc.
+    // Add your logout logic here
+    console.log('Logout clicked');
   };
 
   return (
-    <header className={styles.header}>
-      <div >
-        <Link href="/">MyApp</Link> 
-       
+    <AntHeader className="bg-white shadow-md">
+      <div className="flex items-center">
+        <div className="text-2xl font-bold">
+          <Link href="/">MyApp</Link>
+        </div>
+        <Menu
+          theme="light"
+          mode="horizontal"
+          className="flex-1 ml-8"
+          items={[
+            { key: '1', label: <Link href="/">Home</Link> },
+            { key: '2', label: <Link href="/about">About</Link> },
+            { key: '3', label: <Link href="/contact">Contact</Link> },
+            user && { key: '4', label: <Link href="/profile">Profile</Link> },
+            user && {
+              key: '5',
+              label: (
+                <Button type="link" onClick={handleLogout}>
+                  Logout
+                </Button>
+              ),
+            },
+          ].filter(Boolean)}
+        />
       </div>
-      <nav className={styles.nav}>
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-          {user && (
-            <>
-              <li>
-                <Link href="/profile">Profile</Link>
-              </li>
-              <li>
-                <button onClick={handleLogout}>Logout</button>
-              </li>
-            </>
-          )}
-        </ul>
-      </nav>
-    </header>
+    </AntHeader>
   );
 };
 

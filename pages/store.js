@@ -1,14 +1,10 @@
-import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
-import Footer from '../components/Footer';
 import styles from '../styles/Store.module.css';
 import ProductCard from '../components/ProductCard'; // A component for displaying individual products
 
 const Store = () => {
   return (
     <div className={styles.store}>
-
-      <Sidebar />
+ 
       <main className={styles.mainContent}>
         <section className={styles.storeOverview}>
           <h1>Store Name</h1>

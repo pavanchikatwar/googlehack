@@ -1,51 +1,29 @@
+import { Layout, Typography, Menu } from 'antd';
 import Link from 'next/link';
-import styles from './Footer.module.css'; // Assuming you have a CSS module for styling
+
+const { Footer: AntFooter } = Layout;
+const { Text } = Typography;
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.links}>
-          <ul>
-            <li>
-              <Link href="/about" passHref>
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" passHref>
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link href="/privacy-policy" passHref>
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/terms" passHref>
-                Terms of Service
-              </Link>
-            </li>
-          </ul>
+    <AntFooter className="text-white py-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="text-lg font-semibold">
+          <Text>© {new Date().getFullYear()} MyApp. All rights reserved.</Text>
         </div>
-        <div className={styles.socialMedia}>
-          {/* External links should use standard <link> tags */}
-          <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            Twitter
-          </Link>
-          <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            Facebook
-          </Link>
-          <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </Link>
-        </div>
-        <div className={styles.copyright}>
-          <p>&copy; {new Date().getFullYear()} MyApp. All rights reserved.</p>
-        </div>
+        <Menu
+          theme=""
+          mode="horizontal"
+          className="flex space-x-4"
+          items={[
+            { key: '1', label: <Link href="/about">About Us</Link> },
+            { key: '2', label: <Link href="/contact">Contact</Link> },
+            { key: '3', label: <Link href="/privacy-policy">Privacy Policy</Link> },
+            { key: '4', label: <Link href="/terms">Terms of Service</Link> },
+          ]}
+        />
       </div>
-    </footer>
+    </AntFooter>
   );
 };
 

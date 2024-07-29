@@ -7,7 +7,7 @@ const Profile = ({ userType }) => {
   return (
     <div className={styles.profile}>
 
-      <Sidebar />
+     
       <main className={styles.mainContent}>
         <h1>Profile</h1>
 

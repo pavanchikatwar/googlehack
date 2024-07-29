@@ -59,22 +59,22 @@ const Investors = () => {
             <div className={styles.businessCard}>
               <h3>Innovative Tech Solutions</h3>
               <p>Transforming the tech landscape with cutting-edge solutions in AI and machine learning. Seeking equity investment to expand R&D.</p>
-              <Link href="/business-profile/tech-solutions">
-                <a className={styles.viewDetails}>View Details</a>
+              <Link href="/business-profile/tech-solutions" className={styles.viewDetails}>
+                View Details
               </Link>
             </div>
             <div className={styles.businessCard}>
               <h3>Green Energy Solutions</h3>
               <p>Pioneering sustainable energy solutions with a focus on solar and wind technologies. Looking for temporary loans to scale production.</p>
-              <Link href="/business-profile/green-energy">
-                <a className={styles.viewDetails}>View Details</a>
+              <Link href="/business-profile/green-energy" className={styles.viewDetails}>
+                View Details
               </Link>
             </div>
             <div className={styles.businessCard}>
               <h3>Health Innovators Inc.</h3>
               <p>Leading the way in healthcare innovation with advanced medical devices and telehealth services. Seeking equity investment for clinical trials.</p>
-              <Link href="/business-profile/health-innovators">
-                <a className={styles.viewDetails}>View Details</a>
+              <Link href="/business-profile/health-innovators" className={styles.viewDetails}>
+               View Details
               </Link>
             </div>
           </div>
@@ -86,22 +86,22 @@ const Investors = () => {
             <div className={styles.listingItem}>
               <h3>Smart Home Innovations</h3>
               <p>Developing next-gen smart home technology with a focus on security and automation. Seeking equity funding for market expansion.</p>
-              <Link href="/business-profile/smart-home-innovations">
-                <a className={styles.viewDetails}>View Details</a>
+              <Link href="/business-profile/smart-home-innovations" className={styles.viewDetails}>
+                View Details
               </Link>
             </div>
             <div className={styles.listingItem}>
               <h3>Eco-Friendly Packaging</h3>
               <p>Offering sustainable packaging solutions for various industries. Looking for temporary loans to increase production capacity.</p>
-              <Link href="/business-profile/eco-packaging">
-                <a className={styles.viewDetails}>View Details</a>
+              <Link href="/business-profile/eco-packaging" className={styles.viewDetails}>
+                View Details
               </Link>
             </div>
             <div className={styles.listingItem}>
               <h3>EdTech Visionaries</h3>
               <p>Creating innovative educational tools and platforms to enhance learning experiences. Seeking equity investment to broaden impact.</p>
-              <Link href="/business-profile/edtech-visionaries">
-                <a className={styles.viewDetails}>View Details</a>
+              <Link href="/business-profile/edtech-visionaries" className={styles.viewDetails}>
+                View Details
               </Link>
             </div>
           </div>
@@ -119,14 +119,14 @@ const Investors = () => {
 
         <section className={styles.resources}>
           <h2>Investor Resources</h2>
-          <Link href="/guides">
-            <a className={styles.link}>Investment Guides</a>
+          <Link href="/guides" className={styles.link}>
+            Investment Guides
           </Link>
-          <Link href="/faqs">
-            <a className={styles.link}>FAQs</a>
+          <Link href="/faqs" className={styles.link}>
+            FAQs
           </Link>
           <p>Need more assistance? Reach out to our support team.</p>
-          <a href="mailto:support@yourplatform.com" className={styles.contactLink}>Contact Support</a>
+          <Link href="mailto:support@yourplatform.com" className={styles.contactLink}>Contact Support ,</Link>
         </section>
 
         <section className={styles.successStories}>

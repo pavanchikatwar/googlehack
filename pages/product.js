@@ -17,8 +17,8 @@ const Product = () => {
       <main className={styles.mainContent}>
         <div className={styles.productDetails}>
           <div className={styles.imageGallery}>
-            <Image src="/product-image.jpg" alt="Product" width={500} height={500} className={styles.productImage} />
-            {/* Additional images can be added here */}
+            <Image src="https://placehold.co/200x200" alt="Product" width={200} height={200} className={styles.productImage} />
+           
           </div>
 
           <div className={styles.productInfo}>
@@ -49,13 +49,13 @@ const Product = () => {
           </div>
         </div>
 
-        <section className={styles.productVideo}>
+        {/* <section className={styles.productVideo}>
           <h2>Product Video</h2>
           <video controls className={styles.video}>
             <source src="/product-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </section>
+        </section> */}
 
         <section className={styles.productFAQs}>
           <h2>Frequently Asked Questions</h2>

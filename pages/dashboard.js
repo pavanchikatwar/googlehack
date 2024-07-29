@@ -1,17 +1,15 @@
 import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
+ 
 import Footer from '../components/Footer';
 import styles from '../styles/Dashboard.module.css';
 
 const Dashboard = ({ userType }) => {
   return (
     <div className={styles.dashboard}>
-    
-      <Sidebar />
       <main className={styles.mainContent}>
         <h1>Dashboard</h1>
 
-        {/* Overview Section */}
+
         <section className={styles.overview}>
           <h2>Overview</h2>
           <div className={styles.card}>
